@@ -82,7 +82,5 @@
 		{/if}
 	</span>
 
-	<Loader
-		class={['animate-spin absolute transition', !loading && 'opacity-0', compact && 'size-4']}
-	/>
+	<Loader class={['animate-spin absolute transition size-4', !loading && 'opacity-0']} />
 </Button.Root>

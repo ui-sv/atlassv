@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Tooltip from '$lib/components/tooltip/tooltip.svelte';
 	import { Button } from '$lib/index.js';
 	import Star from '@lucide/svelte/icons/star';
 
@@ -158,5 +159,33 @@
 		<Button icon={Star} shape="circle" icononly compact appearance="discovery"
 			>Discovery button</Button
 		>
+	</div>
+
+	<div class="flex gap-4">
+		<Tooltip content="Favorite this" icon={Star}>Default button</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} appearance="primary">Primary button</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} appearance="subtle">Subtle button</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} appearance="warning">Warning button</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} appearance="danger">Danger button</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} appearance="discovery">Discovery button</Tooltip>
+	</div>
+
+	<div class="flex gap-4">
+		<Tooltip content="Favorite this" icon={Star} shape="circle" compact>Default button</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} shape="circle" compact appearance="primary">
+			Primary button
+		</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} shape="circle" compact appearance="subtle">
+			Subtle button
+		</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} shape="circle" compact appearance="warning">
+			Warning button
+		</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} shape="circle" compact appearance="danger">
+			Danger button
+		</Tooltip>
+		<Tooltip content="Favorite this" icon={Star} shape="circle" compact appearance="discovery">
+			Discovery button
+		</Tooltip>
 	</div>
 </div>
