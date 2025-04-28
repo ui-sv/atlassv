@@ -29,6 +29,7 @@
 		shape = 'default',
 		children,
 		icon,
+		class: klass,
 		...rest
 	}: ButtonProps = $props();
 
@@ -51,12 +52,13 @@
 	id={ID}
 	{disabled}
 	class={[
-		'flex items-center justify-center transition font-medium font-sans text-sm relative',
+		'flex whitespace-nowrap items-center justify-center transition font-medium font-sans text-sm relative',
 		appearances,
-		compact ? 'h-6 px-2' : 'h-8 px-3',
+		compact ? 'h-6' : 'h-8',
 		block && 'w-full',
-		icononly && 'aspect-square',
-		shape === 'default' ? 'rounded-md' : 'rounded-full'
+		icon && !children ? 'aspect-square' : compact ? 'px-2' : 'px-3',
+		shape === 'default' ? 'rounded-md' : 'rounded-full',
+		klass
 	]}
 	{...rest}
 >

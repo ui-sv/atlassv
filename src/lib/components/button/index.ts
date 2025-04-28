@@ -1,5 +1,6 @@
 import { type ButtonRootProps } from 'bits-ui';
 import type { Component, Snippet } from 'svelte';
+import type { ClassValue } from 'svelte/elements';
 
 export { default as Button } from './button.svelte';
 
@@ -61,4 +62,8 @@ export type ButtonProps = ButtonRootProps & {
 	 * Set the shape of the icon, defaults to square with rounded corners.
 	 */
 	href?: string;
+	/**
+	 * Extends the button's class
+	 */
+	class?: ClassValue;
 };

@@ -1,6 +1,7 @@
 import { type TooltipContentProps, type TooltipRootProps } from 'bits-ui';
 import { type ButtonProps } from '$lib/index.js';
 import type { Snippet } from 'svelte';
+export { default as Tooltip } from './tooltip.svelte';
 
 export type TooltipPosition =
 	| 'bottom-start'

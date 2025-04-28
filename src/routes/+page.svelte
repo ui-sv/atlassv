@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Tooltip from '$lib/components/tooltip/tooltip.svelte';
-	import { Button } from '$lib/index.js';
+	import { Button, Menu, Tooltip, MenuItem, MenuSection } from '$lib/index.js';
 	import Star from '@lucide/svelte/icons/star';
 
 	let loading = $state(false);
@@ -188,4 +187,17 @@
 			Discovery button
 		</Tooltip>
 	</div>
+
+	<Menu>
+		<MenuSection>
+			<MenuItem>Item 1</MenuItem>
+			<MenuItem>Item 2</MenuItem>
+			<MenuItem>Item 3</MenuItem>
+		</MenuSection>
+		<MenuSection>
+			<MenuItem>Item 4</MenuItem>
+			<MenuItem>Item 5</MenuItem>
+			<MenuItem>Item 6</MenuItem>
+		</MenuSection>
+	</Menu>
 </div>
