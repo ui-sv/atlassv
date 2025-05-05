@@ -33,7 +33,7 @@
 		{@render toggle_button()}
 	{/snippet}
 
-	{@render children?.()}
-
 	{#snippet aside()}{/snippet}
+
+	{@render children?.()}
 </AppShell>

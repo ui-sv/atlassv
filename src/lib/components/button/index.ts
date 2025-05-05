@@ -66,4 +66,5 @@ export type ButtonProps = ButtonRootProps & {
 	 * Extends the button's class
 	 */
 	class?: ClassValue;
+	'use:hover'?: (v: boolean) => void;
 };

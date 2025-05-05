@@ -20,9 +20,9 @@ export type AppShellProps = {
 	children?: Snippet;
 	aside?: Snippet;
 	navigation?: Snippet;
-	header?: Snippet<[AppShellHeaderProps]>;
-	home_actions?: Snippet<[]>;
+	home_actions?: Snippet<[{ toggle_button: Snippet }]>;
 	common_actions?: Snippet<[]>;
 	users_actions?: Snippet<[]>;
+	panel?: Snippet<[]>;
 	sidelinks?: AppShellSideLink[];
 };
